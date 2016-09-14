@@ -10,9 +10,19 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVCaptureVideoPreviewLayer.h>
 
+
+typedef NS_ENUM(NSUInteger, VieoErrorType) {
+    PPX_VieoError_RearCamera = 0,
+    PPX_VieoError_FrontFacingCamera,
+    PPX_VieoError_Microphone,
+};
+
 @protocol PPX_RecordEngineDelegate <NSObject>
 
 - (void)recordProgress:(CGFloat)progress;
+
+@optional
+- (void)vieoErrorType:(VieoErrorType)vieoErrorType;
 
 @end
 

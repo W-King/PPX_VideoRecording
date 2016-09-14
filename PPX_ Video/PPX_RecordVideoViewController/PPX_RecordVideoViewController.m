@@ -163,7 +163,11 @@ typedef NS_ENUM(NSUInteger, UploadVieoStyle) {
     }
     self.progressView.progress = progress;
 }
-
+- (void)vieoErrorType:(VieoErrorType)vieoErrorType
+{
+    //相应处理
+    self.view.userInteractionEnabled = NO;
+}
 #pragma mark - Apple相册选择代理
 //选择了某个照片的回调函数/代理回调
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {

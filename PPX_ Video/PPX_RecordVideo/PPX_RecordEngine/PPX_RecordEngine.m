@@ -206,6 +206,10 @@
         _backCameraInput = [[AVCaptureDeviceInput alloc] initWithDevice:[self backCamera] error:&error];
         if (error) {
             NSLog(@"获取后置摄像头失败~");
+            if ([self.delegate respondsToSelector:@selector(vieoErrorType:)])
+            {
+                [self.delegate vieoErrorType:PPX_VieoError_RearCamera];
+            }
         }
     }
     return _backCameraInput;
@@ -218,6 +222,10 @@
         _frontCameraInput = [[AVCaptureDeviceInput alloc] initWithDevice:[self frontCamera] error:&error];
         if (error) {
             NSLog(@"获取前置摄像头失败~");
+            if ([self.delegate respondsToSelector:@selector(vieoErrorType:)])
+            {
+                [self.delegate vieoErrorType:PPX_VieoError_FrontFacingCamera];
+            }
         }
     }
     return _frontCameraInput;
@@ -231,6 +239,10 @@
         _audioMicInput = [AVCaptureDeviceInput deviceInputWithDevice:mic error:&error];
         if (error) {
             NSLog(@"获取麦克风失败~");
+            if ([self.delegate respondsToSelector:@selector(vieoErrorType:)])
+            {
+                [self.delegate vieoErrorType:PPX_VieoError_Microphone];
+            }
         }
     }
     return _audioMicInput;
