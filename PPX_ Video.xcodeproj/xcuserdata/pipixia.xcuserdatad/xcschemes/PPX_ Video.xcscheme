@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "57689B681D86B2CE00F1EB9C"
+               BuildableName = "PPX_ Video.app"
+               BlueprintName = "PPX_ Video"
+               ReferencedContainer = "container:PPX_ Video.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "57689B811D86B2CE00F1EB9C"
+               BuildableName = "PPX_ VideoTests.xctest"
+               BlueprintName = "PPX_ VideoTests"
+               ReferencedContainer = "container:PPX_ Video.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "57689B8C1D86B2CE00F1EB9C"
+               BuildableName = "PPX_ VideoUITests.xctest"
+               BlueprintName = "PPX_ VideoUITests"
+               ReferencedContainer = "container:PPX_ Video.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "57689B681D86B2CE00F1EB9C"
+            BuildableName = "PPX_ Video.app"
+            BlueprintName = "PPX_ Video"
+            ReferencedContainer = "container:PPX_ Video.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "57689B681D86B2CE00F1EB9C"
+            BuildableName = "PPX_ Video.app"
+            BlueprintName = "PPX_ Video"
+            ReferencedContainer = "container:PPX_ Video.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "57689B681D86B2CE00F1EB9C"
+            BuildableName = "PPX_ Video.app"
+            BlueprintName = "PPX_ Video"
+            ReferencedContainer = "container:PPX_ Video.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -15,6 +15,11 @@
 		57689B7C1D86B2CE00F1EB9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57689B7A1D86B2CE00F1EB9C /* LaunchScreen.storyboard */; };
 		57689B871D86B2CE00F1EB9C /* PPX__VideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57689B861D86B2CE00F1EB9C /* PPX__VideoTests.m */; };
 		57689B921D86B2CE00F1EB9C /* PPX__VideoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57689B911D86B2CE00F1EB9C /* PPX__VideoUITests.m */; };
+		578589791D87A23E00D8F01D /* PPX_RecordEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 578589781D87A23E00D8F01D /* PPX_RecordEngine.m */; };
+		5785897C1D87A26E00D8F01D /* PPX_RecordEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5785897B1D87A26E00D8F01D /* PPX_RecordEncoder.m */; };
+		5785897E1D87A29F00D8F01D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5785897D1D87A29F00D8F01D /* MobileCoreServices.framework */; };
+		578589821D87A8E200D8F01D /* PPX_RecordProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 578589811D87A8E200D8F01D /* PPX_RecordProgressView.m */; };
+		578589861D87A99C00D8F01D /* PPX_RecordVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578589851D87A99C00D8F01D /* PPX_RecordVideoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,15 @@
 		57689B8D1D86B2CE00F1EB9C /* PPX_ VideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PPX_ VideoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57689B911D86B2CE00F1EB9C /* PPX__VideoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPX__VideoUITests.m; sourceTree = "<group>"; };
 		57689B931D86B2CE00F1EB9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		578589771D87A23E00D8F01D /* PPX_RecordEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPX_RecordEngine.h; sourceTree = "<group>"; };
+		578589781D87A23E00D8F01D /* PPX_RecordEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPX_RecordEngine.m; sourceTree = "<group>"; };
+		5785897A1D87A26E00D8F01D /* PPX_RecordEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPX_RecordEncoder.h; sourceTree = "<group>"; };
+		5785897B1D87A26E00D8F01D /* PPX_RecordEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPX_RecordEncoder.m; sourceTree = "<group>"; };
+		5785897D1D87A29F00D8F01D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		578589801D87A8E200D8F01D /* PPX_RecordProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPX_RecordProgressView.h; sourceTree = "<group>"; };
+		578589811D87A8E200D8F01D /* PPX_RecordProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPX_RecordProgressView.m; sourceTree = "<group>"; };
+		578589841D87A99C00D8F01D /* PPX_RecordVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPX_RecordVideoViewController.h; sourceTree = "<group>"; };
+		578589851D87A99C00D8F01D /* PPX_RecordVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPX_RecordVideoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5785897E1D87A29F00D8F01D /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,7 @@
 		57689B601D86B2CE00F1EB9C = {
 			isa = PBXGroup;
 			children = (
+				5785897D1D87A29F00D8F01D /* MobileCoreServices.framework */,
 				57689B6B1D86B2CE00F1EB9C /* PPX_ Video */,
 				57689B851D86B2CE00F1EB9C /* PPX_ VideoTests */,
 				57689B901D86B2CE00F1EB9C /* PPX_ VideoUITests */,
@@ -101,10 +117,12 @@
 		57689B6B1D86B2CE00F1EB9C /* PPX_ Video */ = {
 			isa = PBXGroup;
 			children = (
+				578589741D87A14700D8F01D /* PPX_RecordVideo */,
 				57689B6F1D86B2CE00F1EB9C /* AppDelegate.h */,
 				57689B701D86B2CE00F1EB9C /* AppDelegate.m */,
 				57689B721D86B2CE00F1EB9C /* ViewController.h */,
 				57689B731D86B2CE00F1EB9C /* ViewController.m */,
+				578589831D87A98900D8F01D /* PPX_RecordVideoViewController */,
 				57689B751D86B2CE00F1EB9C /* Main.storyboard */,
 				57689B781D86B2CE00F1EB9C /* Assets.xcassets */,
 				57689B7A1D86B2CE00F1EB9C /* LaunchScreen.storyboard */,
@@ -138,6 +156,52 @@
 				57689B931D86B2CE00F1EB9C /* Info.plist */,
 			);
 			path = "PPX_ VideoUITests";
+			sourceTree = "<group>";
+		};
+		578589741D87A14700D8F01D /* PPX_RecordVideo */ = {
+			isa = PBXGroup;
+			children = (
+				5785897F1D87A8CF00D8F01D /* PPX_RecordProgressView */,
+				578589761D87A16C00D8F01D /* PPX_RecordEngine */,
+				578589751D87A15D00D8F01D /* PPX_RecordEncoder */,
+			);
+			path = PPX_RecordVideo;
+			sourceTree = "<group>";
+		};
+		578589751D87A15D00D8F01D /* PPX_RecordEncoder */ = {
+			isa = PBXGroup;
+			children = (
+				5785897A1D87A26E00D8F01D /* PPX_RecordEncoder.h */,
+				5785897B1D87A26E00D8F01D /* PPX_RecordEncoder.m */,
+			);
+			path = PPX_RecordEncoder;
+			sourceTree = "<group>";
+		};
+		578589761D87A16C00D8F01D /* PPX_RecordEngine */ = {
+			isa = PBXGroup;
+			children = (
+				578589771D87A23E00D8F01D /* PPX_RecordEngine.h */,
+				578589781D87A23E00D8F01D /* PPX_RecordEngine.m */,
+			);
+			path = PPX_RecordEngine;
+			sourceTree = "<group>";
+		};
+		5785897F1D87A8CF00D8F01D /* PPX_RecordProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				578589801D87A8E200D8F01D /* PPX_RecordProgressView.h */,
+				578589811D87A8E200D8F01D /* PPX_RecordProgressView.m */,
+			);
+			path = PPX_RecordProgressView;
+			sourceTree = "<group>";
+		};
+		578589831D87A98900D8F01D /* PPX_RecordVideoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				578589841D87A99C00D8F01D /* PPX_RecordVideoViewController.h */,
+				578589851D87A99C00D8F01D /* PPX_RecordVideoViewController.m */,
+			);
+			path = PPX_RecordVideoViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +335,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				57689B741D86B2CE00F1EB9C /* ViewController.m in Sources */,
+				578589791D87A23E00D8F01D /* PPX_RecordEngine.m in Sources */,
+				5785897C1D87A26E00D8F01D /* PPX_RecordEncoder.m in Sources */,
 				57689B711D86B2CE00F1EB9C /* AppDelegate.m in Sources */,
 				57689B6E1D86B2CE00F1EB9C /* main.m in Sources */,
+				578589821D87A8E200D8F01D /* PPX_RecordProgressView.m in Sources */,
+				578589861D87A99C00D8F01D /* PPX_RecordVideoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +413,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: zhi zhou (2V7FQBWWBC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zhi zhou (2V7FQBWWBC)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -367,6 +436,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "f484a996-5986-4ce3-81f5-a1f104a33495";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -390,7 +460,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: zhi zhou (2V7FQBWWBC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zhi zhou (2V7FQBWWBC)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -405,6 +476,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "f484a996-5986-4ce3-81f5-a1f104a33495";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -417,7 +489,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "PPX_ Video/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "pipixia.PPX--Video";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bx.appPay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -428,7 +500,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "PPX_ Video/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "pipixia.PPX--Video";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bx.appPay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -498,6 +570,7 @@
 				57689B981D86B2CE00F1EB9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57689B991D86B2CE00F1EB9C /* Build configuration list for PBXNativeTarget "PPX_ VideoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +579,7 @@
 				57689B9B1D86B2CE00F1EB9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57689B9C1D86B2CE00F1EB9C /* Build configuration list for PBXNativeTarget "PPX_ VideoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +588,7 @@
 				57689B9E1D86B2CE00F1EB9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
